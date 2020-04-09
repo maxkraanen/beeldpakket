@@ -1,0 +1,190 @@
+
+
+#exTab1 .tab-content {
+  color : white;
+  background-color: rgba($green, .6);
+  padding : 5px 15px;
+  height: 500px;
+}
+
+#exTab2 h3 {
+  color : white;
+  background-color: rgba($green, .6);
+  padding : 5px 15px;
+}
+
+/* remove border radius for the tab */
+
+#exTab1 .nav-pills > li > a {
+  border-radius: 0;
+}
+
+/* change border radius for the tab , apply corners on top*/
+
+#exTab3 .nav-pills > li > a {
+  border-radius: 4px 4px 0 0 ;
+}
+
+#exTab3 .tab-content {
+  color : white;
+  background-color: rgba($green, .6);
+  padding : 5px 15px;
+}
+
+.nav > li{
+  width: 162px;
+  a{
+    font-size: 16px;
+  }
+}
+
+.nav-pills > li.active > a {
+  color: #fff;
+  background-color: $green;
+  &:hover {
+    background-color: rgba($green, 0.7);
+  }
+}
+
+.nav-pills{
+  a{
+    color: $green;
+    &:hover {
+      color: rgba($green, 0.7);
+    }
+  }
+}
+
+.tab-container {
+  display: flex;
+  margin-top: 20px;
+  padding: 0 10px;
+
+}
+
+.tab-text{
+ position: relative;
+ padding-top: 30px;
+ height: 450px;
+ width: 340px;
+ background-color: white;
+ opacity: 0.8;
+ align-self: flex-end;
+ li {
+  color: $green;
+}
+h1 {
+  color: $green;
+}
+h2 {
+  color: $green;
+}
+h3 {
+  color: $green;
+}
+}
+
+.tab-title{
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.tab-price{
+  margin-left: 45px;
+  margin-top: 45px;
+}
+
+
+.tab-button{
+  margin-left: 45px;
+  margin-top: 55px;
+}
+
+
+
+.background-tab {
+  flex: 1;
+  height: 450px;
+  background-size: cover;
+}
+
+#foto-tab{
+  background-image: url(../images/watwijdoen.jpg);
+}
+
+#threesixty-tab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/watwijdoen360.jpg);
+}
+
+.tab-list{
+  list-style-type: none;
+  padding: 20px 20px 20px 40px;
+}
+
+#video-tab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#meting-tab{
+  // background-image: url(../images/meting.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  }
+
+#walk-through-tab{
+  background-image: url(../images/artist1.jpg);
+}
+
+@media (max-width: 991px){
+  .nav > li{
+    width: 112px;
+  }
+  .tab-text{
+    padding-top: 30px;
+    padding-left: 0;
+    width: 275px;
+  }
+}
+
+
+@media (max-width: 600px){
+  .nav-pills{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
+  .nav > li{
+    width: 200px;
+  }
+  .tab-text{
+    width: 100%
+  }
+  #woning-button{
+    margin: 35px auto 0 auto;
+  }
+  .tab-button{
+    margin: 55px auto 0 auto;
+  }
+}
+
+@media (max-width: 420px){
+
+  .tab-list{
+    li{
+      font-size: 16px;
+    }
+  }
+  #woning-price{
+    h3{
+      font-size: 16px;
+    }
+  }
+}
+

@@ -1,0 +1,97 @@
+.green-button {
+  width: 180px;
+  height: 50px;
+  background-color: $green;
+  color: white;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    transform: scale(1.05);
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+a:hover {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+a.navbar-btn:hover {
+  text-decoration: underline !important;
+}
+
+.cf-button {
+  background-color: $green;
+  border: none;
+  padding: 20px;
+  border-radius: 1px;
+}
+
+#makelaar-button {
+  margin-top: 15px;
+  background-color: rgba($green, 0.7);
+  &:hover {
+    background-color: rgba($green, 0.85);
+  }
+  a {
+    font-size: 18px;
+  }
+}
+
+.call-to-action {
+  z-index: 1000;
+  width: 300px;
+  height: 80px;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+#beeld-button-container {
+  padding-bottom: 15px;
+}
+
+@media (max-width: 1200px) {
+  .call-to-action {
+    width: 240px;
+    height: 55px;
+  }
+}
+
+#inplan-button {
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  background-color: #00a584;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  @media (max-width: 992px) {
+    font-size: 16px;
+  }
+}
+
+.nen-button {
+  width: 300px;
+}

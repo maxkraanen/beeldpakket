@@ -1,0 +1,46 @@
+.col-xs-12 {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#project-container {
+  min-height: 700px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 760px) {
+  #project-container {
+    padding-top: 50px;
+  }
+}
+
+.carousel-control.right {
+  background-image: none;
+}
+
+.carousel-control.left {
+  background-image: none;
+}
+
+#project-carousel-inner > .item > img {
+  background-size: cover;
+  height: 600px;
+}
+
+.modal-dialog {
+  max-width: 900px !important;
+  height: auto !important;
+}
+
+// @media (max-width: 1000px) {
+//   .modal-dialog {
+//     width: 700px;
+//   }
+// }
+
+// @media (max-width: 1000px) {
+//   .modal-dialog {
+//     width: auto;
+//   }
+// }

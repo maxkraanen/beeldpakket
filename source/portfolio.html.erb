@@ -1,0 +1,42 @@
+
+
+<div id="project-container">
+  <div class="container">
+    <div class="row">
+     <% data.projecten.projects.each do |p| %>
+     <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="card">
+        <img src="<%= image_path p.photo %>" style="width: 360px; height: 240px;" data-toggle="modal" data-target="#myModal" >
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+</div>
+
+
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img class="img-fluid" src="" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">X</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function () {
+    $('#myModal').on('show.bs.modal', function (e) {
+      var image = $(e.relatedTarget).attr('src');
+      $(".img-fluid").attr("src", image);
+    });
+  });
+</script>
+
+
+

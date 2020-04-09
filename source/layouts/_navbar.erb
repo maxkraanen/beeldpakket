@@ -1,0 +1,36 @@
+<div class="navbar">
+  <div class="logo-container">
+    <% link_to '../index.html' do %>
+    <%= image_tag 'logo-groot.png', class:'logo-navbar' %>
+    <%= image_tag 'logo-klein.png', class: 'logo-small' %>
+    <% end %>
+  </div>
+
+  <div class="navbar-buttons">
+    <%= link_to "Pakketten", "/pakketten.html", class:"navbar-btn" %>
+    <%= link_to "Wat wij doen", "/beeldmateriaal.html", class:"navbar-btn" %>
+    <%= link_to "Portfolio", "/portfolio.html", class:"navbar-btn" %>
+    <%= link_to "Over Ons", "/over-ons.html", class:"navbar-btn" %>
+    <%= link_to "Contact", "/contact.html", class:"navbar-btn" %>
+    <%= link_to  "☏ 020-7702106", "tel:#{+31207702106}", class:"navbar-btn" %>
+  </div>
+    <%= link_to "Online inplannen", "/inplannen.html", class:"navbar-btn", id:"inplan-button" %>
+  <!-- Dropdown list appearing on mobile only -->
+  <div class="dropdown mobile-dropdown ">
+    <a href="" class="dropdown-toggle"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <%= image_tag "ham.png" %></a>
+    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+      <%= link_to "Pakketten", "/pakketten.html", class:"navbar-btn" %>
+      <%= link_to "Wat wij doen", "/beeldmateriaal.html", class:"navbar-btn" %>
+      <%= link_to "Portfolio", "/portfolio.html", class:"navbar-btn" %>
+      <%= link_to "Over Ons", "/over-ons.html", class:"navbar-btn" %>
+      <%= link_to "Contact", "/contact.html", class:"navbar-btn" %>
+      <%= link_to "Online inplannen", "/inplannen.html", class:"navbar-btn" %>
+      <%= link_to  "☏ 020-7702106", "tel:#{+31207702106}", class:"navbar-btn" %>
+    </div>
+  </div>
+
+
+</div>
+
+

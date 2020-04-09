@@ -1,0 +1,35 @@
+#about-container{
+  height: 100vh;
+  display: flex;
+}
+
+#about-field{
+  width: 50%;
+  // height: 750px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 125px;
+  // padding: 200px 120px 50px 120px;
+  h1{
+    color: $green;
+  }
+  h3{
+    color: $green;
+  }
+}
+
+#about-text{
+  width: 300px;
+}
+
+#about-photo{
+  width: 50%;
+  background-size: cover;
+}
+
+@media (max-width: 768px){
+  #about-field{
+    width: 100%;
+  }
+}

@@ -1,0 +1,36 @@
+
+
+
+{
+  "projects": [
+    {
+      "name": "example1",
+      "photo": "beeldpakket001.jpg"
+    },
+    {
+      "name": "example2",
+      "photo": "beeldpakket002.jpg"
+    },
+    {
+      "name": "example3",
+      "photo": "beeldpakket005.jpg"
+    },
+    {
+      "name": "example4",
+      "photo": "beeldpakket006.jpg"
+    },
+    {
+      "name": "example5",
+      "photo": "beeldpakket008.jpg"
+    },
+    {
+      "name": "example6",
+      "photo": "beeldpakket001.jpg"
+    },
+  ]
+}
+
+
+
+
+

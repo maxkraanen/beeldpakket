@@ -1,0 +1,34 @@
+<div id="contact-container">
+  <div class="container">
+    <div class="row" style="display:flex;justify-content:center;align-items:center; margin-top:5%;">
+      <div class="col-xs-12 col-md-6 col-md-offset-3">
+      <h2 id="contact-title">
+        Voor meer informatie kunt u een bericht sturen naar <br> contact@beeldpakket.nl<br>
+        Wij nemen dan zo snel mogelijk contact met u op.<br><br>
+
+      Indien u liever telefonisch contact wilt kunt u ons bellen: <br>020-7702106</h2>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://unpkg.com/static.email"></script>
+<script>
+  StaticEmail({
+    // your zeit now SES enabled serverless function
+    path: '/api/paperboy',
+
+    // optional fields
+    from: 'Some Body <maxkraanen@hotmail.com>',
+    subject: 'Is it really that simple?',
+
+    // allowed content
+    html: '<strong>Great Service!</strong>',
+    md: '# Great Service!',
+    text: 'Great Service'
+  })
+    .then(() => console.log('email sent 🎉'))
+    .catch(console.error);
+</script>

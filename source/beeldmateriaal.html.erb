@@ -1,0 +1,144 @@
+<div id="beeldmateriaal-container">
+<div class="container" id="exTab1">
+<ul class="nav nav-pills" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Fotografie</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">360º Foto</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Video</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-4-tab" data-toggle="pill" href="#pills-4" role="tab" aria-controls="pills-4" aria-selected="false">NEN 2580 Meting</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" id="pills-5-tab" data-toggle="pill" href="#pills-5" role="tab" aria-controls="pills-5" aria-selected="false">Artist impressie</a>
+  </li>
+</ul>
+
+
+<div class="tab-content" id="pills-tabContent" style="margin-bottom:10%">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    <div class="tab-container">
+      <div class="background-tab" id="foto-tab">
+      </div>
+      <div class="tab-text">
+        <div class="tab-title">
+          <h2><strong>Fotografie:</strong></h2>
+        </div>
+        <ul class='tab-list'>
+          <li>
+              Met onze fotografie brengen wij uw woning zo aantrekkelijk mogelijk in beeld. Wij pakken de juiste sfeer en bijzondere punten van de woning zodat er zoveel mogelijk potentiële kopers een bezichtiging in willen plannen.
+          </li>
+        </ul>
+        <div id="beeld-button-container" class="pakket-button-container">
+          <h3 class="green-button plan-button"><%= link_to "Online inplannen", "/inplannen.html" %></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+    <div class="tab-container">
+      <div class="background-tab" id="threesixty-tab">
+      </div>
+      <div class="tab-text">
+        <div class="tab-title">
+          <h2><strong>360º Foto:</strong></h2>
+        </div>
+        <ul class='tab-list'>
+          <li>
+            Vul uw fotoreportage aan met één of meer 360 graden foto's. Op deze foto's kunt u in de ruimte vanaf één punt, 360 graden om u heen kijken. Een handige medium om meer overzicht van de woning te krijgen en hoger in de resultaten up Funda te komen.
+          </li>
+        </ul>
+        <div id="beeld-button-container" class="pakket-button-container">
+          <h3 class="green-button plan-button"><%= link_to "Online inplannen", "/inplannen.html" %></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+    <div class="tab-container">
+      <div class="background-tab" id="video-tab">
+        <video id="beeld-video" class="video-js vjs-big-play-centered" controls preload="auto"
+          data-setup="{}">
+          <source src="../videos/watwijdoenvideo.mp4" type='video/mp4'>
+            <!-- <source src="MY_VIDEO.webm" type='video/webm'> -->
+          <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a web browser that
+            <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+          </p>
+        </video>
+      </div>
+      <div class="tab-text">
+        <div class="tab-title">
+          <h2><strong>Video:</strong></h2>
+        </div>
+        <ul class='tab-list'>
+          <li>Met een video kunt u uw beeldpakket compleet maken. In onze video's benadrukken wij dynamisch de pluspunten van de woning en het is hiermee een mooi medium om potentiële kopers te enthousiasmeren. Video draagt ook bij aan een hoger resultaat op Funda.
+          </li>
+        </ul>
+        <div id="beeld-button-container" class="pakket-button-container">
+          <h3 class="green-button plan-button"><%= link_to "Online inplannen", "/inplannen.html" %></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    
+  <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab">
+    <div class="tab-container">
+      <div class="background-tab" id="meting-tab">
+        <button class="green-button nen-button" data-toggle="modal" data-target="#nenModal">
+          Bekijk voorbeeld-rapport
+        </button>
+      </div>
+      <div class="tab-text">
+        <div class="tab-title">
+          <h2><strong>NEN 2580 (BBMI) meting:</strong></h2>
+        </div>
+        <ul class='tab-list'>
+          <li>
+            Een meetrapport geeft de koper vertrouwen en u kunt met de verkoper een strategie bepalen op basis van de door ons precies vastgestelde oppervlakte. Wij meten in conform de branchebrede NVM cs meetinstructie
+          </li>
+        </ul>
+        <div id="beeld-button-container" class="pakket-button-container">
+          <h3 class="green-button plan-button"><a href="inplannen.html">Online inplannen</a></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab">
+      <div class="tab-container">
+        <div class="background-tab" id="walk-through-tab">
+        </div>
+          <div class="tab-text">
+            <div class="tab-title">
+              <h2><strong>Artist Impressie:</strong></h2>
+            </div>
+            <ul class='tab-list'>
+              <li>
+                Wij kunnen op basis van foto's of plattegronden een Artist Impressie maken. Dit is een goed medium om te gebruiken als toevoeging aan uw bestaande pakket voor bijvoorbeeld nog te renoveren woningen.
+              </li>
+            </ul>
+            <div id="beeld-button-container" class="pakket-button-container">
+              <h3 class="green-button plan-button"><%= link_to "Online inplannen", "/inplannen.html" %></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  
+
+<%= partial 'layouts/nen' %>
+<%#= partial 'layouts/artist' %>
+
+
+
+
+  <script src="http://vjs.zencdn.net/6.6.3/video.js"></script>

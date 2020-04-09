@@ -1,0 +1,23 @@
+#contact-container{
+  height: 700px;
+  width: 100%;
+  padding-top: 40px;
+}
+
+.cf-input-field{
+  border-radius: 1px;
+}
+
+.cf-input-field:focus {
+    -webkit-box-shadow: 0px 0px 0px 2px rgba($green, 0.7);
+    box-shadow: 0px 0px 0px 2px rgba($green, 0.7);
+    outline: none
+  }
+
+#contact-title{
+  line-height: 32px;
+  color: $green;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+}
