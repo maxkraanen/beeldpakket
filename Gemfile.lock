@@ -24,9 +24,10 @@ GEM
       babel-source (>= 4.0, < 6)
       execjs (~> 2.0)
     backports (3.17.1)
-    bootstrap-sass (3.4.1)
-      autoprefixer-rails (>= 5.2.1)
-      sassc (>= 2.0.0)
+    bootstrap (4.0.0)
+      autoprefixer-rails (>= 6.0.3)
+      popper_js (>= 1.12.9, < 2)
+      sass (>= 3.5.2)
     byebug (11.1.1)
     coderay (1.1.2)
     coffee-script (2.4.1)
@@ -125,6 +126,11 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    sass (3.7.4)
+      sass-listen (~> 4.0.0)
+    sass-listen (4.0.0)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
     sassc (2.2.1)
       ffi (~> 1.9)
     servolux (0.13.0)
@@ -148,7 +154,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap-sass
+  bootstrap (~> 4.0.0)
   font-awesome-middleman
   jquery-middleman
   middleman (~> 4.2)
