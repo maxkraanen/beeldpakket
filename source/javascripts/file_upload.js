@@ -44,3 +44,16 @@ fileSubmit.onclick = function(e) {
     }
   );
 };
+
+async function pageTokenExample() {
+  // Create a reference under which you want to list
+  var listRef = storageRef.child("plattegronden/");
+  console.log(listRef);
+  // Fetch the first page of 100.
+  var results = await listRef.list({ maxResults: 100 });
+  console.log(results);
+  // Use the result.
+  // processItems(results.items)
+}
+
+pageTokenExample();
