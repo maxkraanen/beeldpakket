@@ -1,30 +1,41 @@
-#beeldmateriaal-container{
+#beeldmateriaal-container {
   min-height: 800px;
   padding-top: 65px;
   padding-bottom: 65px;
 }
 
-#beeld-video{
+#beeld-video {
   width: 680px;
   height: 382px;
 }
 
-@media (max-width: 1200px){
-  #beeld-video{
+@media (max-width: 1200px) {
+  #beeld-video {
     width: 520px;
     height: 293px;
   }
 }
 
-@media (max-width: 990px){
-  #beeld-video{
+@media (max-width: 990px) {
+  #beeld-video {
     width: 357px;
     height: 201px;
   }
 }
 
-@media (max-width: 600px){
-  #beeld-video{
+@media (max-width: 600px) {
+  #beeld-video {
     display: none;
+  }
+}
+
+.iframe-roundme {
+  width: 680px;
+  height: 450px;
+  @media (max-width: 1199px) {
+    width: 520px;
+  }
+  @media (max-width: 991px) {
+    width: 340px;
   }
 }
