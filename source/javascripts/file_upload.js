@@ -1,46 +1,46 @@
+"use strict";
+
 var fileInput = document.getElementById("file-input");
 var fileSubmit = document.getElementById("file-submit");
+var storageService = firebase.storage();
+var storageRef = storageService.ref();
 
-const storageService = firebase.storage();
-const storageRef = storageService.ref();
-
+var selectedFile;
 fileInput.onchange = function(e) {
   selectedFile = e.target.files[0];
 };
 
 fileSubmit.onclick = function(e) {
-  const successMessage = document.getElementById("success_message");
-  const errorMessage = document.getElementById("error_message");
-  //   message for uploading and disable button
-  const button = document.getElementById("file-submit");
+  var successMessage = document.getElementById("success_message");
+  var errorMessage = document.getElementById("error_message"); //   message for uploading and disable button
+
+  var button = document.getElementById("file-submit");
   button.disabled = true;
-  const uploadingMessage = document.getElementById("upload_message");
-  uploadingMessage.classList.remove("hidden");
-  //   remove error messages
+  var uploadingMessage = document.getElementById("upload_message");
+  uploadingMessage.classList.remove("hidden"); //   remove error messages
+
   errorMessage.classList.add("hidden");
   successMessage.classList.add("hidden");
-
-  const uploadTask = storageRef
-    .child(`plattegronden/${selectedFile.name}`)
+  var uploadTask = storageRef
+    .child("plattegronden/".concat(selectedFile.name))
     .put(selectedFile); //create a child directory called images, and place the file inside this directory
+
   uploadTask.on(
     "state_changed",
-    snapshot => {
+    function(snapshot) {
       // Observe state change events such as progress, pause, and resume
     },
-    error => {
+    function(error) {
       uploadingMessage.classList.add("hidden");
       errorMessage.classList.remove("hidden");
-      button.disabled = false;
-
-      // Handle unsuccessful uploads
+      button.disabled = false; // Handle unsuccessful uploads
       //   console.log(error);
     },
-    () => {
+    function() {
       // Do something once upload is complete
       uploadingMessage.classList.add("hidden");
       successMessage.classList.remove("hidden");
-      button.disabled = true;
+      button.disabled = false;
     }
   );
 };
