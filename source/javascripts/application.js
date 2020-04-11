@@ -2,3 +2,4 @@
 
 //= require navbar
 //= require carous
+//= require file_upload

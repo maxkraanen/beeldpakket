@@ -1,11 +1,49 @@
-#plan-title{
+#plan-title {
   font-size: 30px;
   color: $green;
   margin-top: 70px;
   margin-bottom: 50px;
 }
 
-#plan-container{
+#plan-container {
   min-height: 650px;
   padding-bottom: 50px;
+}
+
+#filesubmit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 70px;
+  flex-direction: column;
+  h4 {
+    color: $green;
+    margin-bottom: 20px;
+  }
+}
+
+.upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message_upload {
+  box-sizing: border-box;
+  margin-top: 30px;
+  padding: 10px 40px;
+  font-size: 22px;
+}
+
+#success_message,
+#upload_message {
+  @extend .message_upload;
+  color: $green;
+  border: 1px solid $green;
+}
+
+#error_message {
+  @extend .message_upload;
+  color: $red;
+  border: 1px solid $red;
 }
