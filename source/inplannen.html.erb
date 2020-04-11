@@ -16,8 +16,14 @@
 	<div id="app"></div>
 
   <div id="filesubmit">
-  <input type="file" id="file-input" accept="image/*"/>
-  <button id="file-submit">SUBMIT</button>
+    <h4>Voeg hier de plattegrond van de woning toe</h4>
+    <div class="upload-container">
+      <input type="file" id="file-input" accept="image/*"/>
+      <button id="file-submit" class="green-button">UPLOADEN</button>
+    </div>
+    <div class="hidden" id="success_message">Upload geslaagd!</div>
+    <div class="hidden" id="error_message">Upload mislukt!</div>
+    <div class="hidden" id="upload_message">Aan het uploaden...</div>
 </div>
 
 	<!-- Firebase App is always required and must be first -->
@@ -30,7 +36,7 @@
 	<!-- Inicializa o firebase -->
 	<script>
 		var config = {
-             apiKey: "AIzaSyC1CGtfbS-TRGUkxeZthXIdY-Jq1Tek8y4",
+            apiKey: 'AIzaSyC1CGtfbS-TRGUkxeZthXIdY-Jq1Tek8y4',
             authDomain: "beeldpakket.firebaseapp.com",
             databaseURL: "https://beeldpakket.firebaseio.com",
             projectId: "beeldpakket",
