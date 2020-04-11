@@ -13,12 +13,56 @@
   </div>
 </div>
 
+	<div id="app"></div>
 
+  <div id="filesubmit">
+  <input type="file" id="file-input" accept="image/*"/>
+  <button id="file-submit">SUBMIT</button>
+</div>
 
+	<%# <input type="file" id="file-input" />
+	<input type="text" id="string-input" />
+  <button type="submit">submit</button> %>
+	<!-- Firebase App is always required and must be first -->
+	<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js">
 
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-storage.js"></script>
+		<!-- Add additional services that you want to use -->
+	<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js">
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js">
 
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js">
+
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-messaging.js">
+
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-functions.js">
+
+	</script>
+
+	<!-- Inicializa o firebase -->
+	<script>
+		var config = {
+             apiKey: "AIzaSyC1CGtfbS-TRGUkxeZthXIdY-Jq1Tek8y4",
+            authDomain: "beeldpakket.firebaseapp.com",
+            databaseURL: "https://beeldpakket.firebaseio.com",
+            projectId: "beeldpakket",
+            storageBucket: "beeldpakket.appspot.com",
+            messagingSenderId: "42726494167",
+            appId: "1:42726494167:web:2505f5387dedcd2e11c592"
+          };
+          firebase.initializeApp(config);
+	</script>
+	<!-- Nosso app -->
+	<script src="./javascripts/file_upload.js">
+	</script>
 
 
 <script type="text/javascript" src="https://widget.onlineafspraken.nl/consumer/booking/book/key/dnhm15wdam77-ddzm15/at/0/ln/3/l/11111/t/38c/f/e0c010e/c/00aeef,00606e,111,00606e,f3b700,fff,0,fff/s/550_1500/o/theme:advanced,dp:modern,interval:week/exclude/mobiledetect/output/js">
 
 </script>
+

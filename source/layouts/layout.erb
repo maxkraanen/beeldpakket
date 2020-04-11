@@ -12,6 +12,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <%= stylesheet_link_tag "application" %>
   <%= javascript_include_tag "application" %>
+
   
   <%# <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cosmo/bootstrap.min.css" crossorigin="anonymous"> %>
   <%= favicon_tag 'images/favicon.png' %>
@@ -23,6 +24,72 @@
   <%= yield %>
 
   <%= partial 'layouts/footer' %>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<%# <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC1CGtfbS-TRGUkxeZthXIdY-Jq1Tek8y4",
+    authDomain: "beeldpakket.firebaseapp.com",
+    databaseURL: "https://beeldpakket.firebaseio.com",
+    projectId: "beeldpakket",
+    storageBucket: "beeldpakket.appspot.com",
+    messagingSenderId: "42726494167",
+    appId: "1:42726494167:web:2505f5387dedcd2e11c592"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  
+</script>
+  
+<script>
+console.log("loaded");
+  // var storageService = require('@google-cloud/storage')
+  const storageService = firebase.storage();
+  const storageRef = storageService.ref();
+
+  let selectedFile;
+  function handleFileUploadChange(e) {
+    console.log("selected");
+    selectedFile = e.target.files[0];
+  }
+
+  function handleFileUploadSubmit(e) {
+    console.log("submitting");
+
+    const uploadTask = storageRef
+      .child(`plattegronden/${selectedFile.name}`)
+      .put(selectedFile); //create a child directory called images, and place the file inside this directory
+    uploadTask.on(
+      "state_changed",
+      snapshot => {
+        // Observe state change events such as progress, pause, and resume
+      },
+      error => {
+        // Handle unsuccessful uploads
+        console.log(error);
+      },
+      () => {
+        // Do something once upload is complete
+        console.log("success");
+      }
+    );
+  }
+
+  document
+    .querySelector("#file-select")
+    .addEventListener("change", handleFileUploadChange(e));
+  document
+    .querySelector("#file-submit")
+    .addEventListener("click", handleFileUploadSubmit(e));</script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-storage.js"></script> %>
+
 </body>
 <%= google_analytics_tag %>
 </html>
