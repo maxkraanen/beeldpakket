@@ -5,6 +5,7 @@ var fileSubmit = document.getElementById("file-submit");
 var storageService = firebase.storage();
 var storageRef = storageService.ref();
 
+var selectedFile;
 fileInput.onchange = function(e) {
   selectedFile = e.target.files[0];
 };
@@ -39,7 +40,7 @@ fileSubmit.onclick = function(e) {
       // Do something once upload is complete
       uploadingMessage.classList.add("hidden");
       successMessage.classList.remove("hidden");
-      button.disabled = true;
+      button.disabled = false;
     }
   );
 };
