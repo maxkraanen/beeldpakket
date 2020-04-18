@@ -1,36 +1,23 @@
-
-
-
 {
-  "projects": [
-    {
-      "name": "example1",
-      "photo": "beeldpakket001.jpg"
-    },
-    {
-      "name": "example2",
-      "photo": "beeldpakket002.jpg"
-    },
-    {
-      "name": "example3",
-      "photo": "beeldpakket005.jpg"
-    },
-    {
-      "name": "example4",
-      "photo": "beeldpakket006.jpg"
-    },
-    {
-      "name": "example5",
-      "photo": "beeldpakket008.jpg"
-    },
-    {
-      "name": "example6",
-      "photo": "beeldpakket001.jpg"
-    },
-  ]
+  "projects":
+    [
+      { "name": "example1", "photo": "portfolio_beeldpakket_001.jpg" },
+      { "name": "example2", "photo": "portfolio_beeldpakket_002.jpg" },
+      { "name": "example3", "photo": "portfolio_beeldpakket_003.jpg" },
+      { "name": "example4", "photo": "portfolio_beeldpakket_004.jpg" },
+      { "name": "example5", "photo": "portfolio_beeldpakket_005.jpg" },
+      { "name": "example6", "photo": "portfolio_beeldpakket_006.jpg" },
+      { "name": "example7", "photo": "portfolio_beeldpakket_007.jpg" },
+      { "name": "example8", "photo": "portfolio_beeldpakket_008.jpg" },
+      { "name": "example9", "photo": "portfolio_beeldpakket_009.jpg" },
+      { "name": "example10", "photo": "portfolio_beeldpakket_010.jpg" },
+      { "name": "example11", "photo": "portfolio_beeldpakket_011.jpg" },
+      { "name": "example12", "photo": "portfolio_beeldpakket_012.jpg" },
+      { "name": "example13", "photo": "portfolio_beeldpakket_013.jpg" },
+      { "name": "example14", "photo": "portfolio_beeldpakket_014.jpg" },
+      { "name": "example15", "photo": "portfolio_beeldpakket_015.jpg" },
+      { "name": "example16", "photo": "portfolio_beeldpakket_016.jpg" },
+      { "name": "example17", "photo": "portfolio_beeldpakket_017.jpg" },
+      { "name": "example18", "photo": "portfolio_beeldpakket_018.jpg" },
+    ],
 }
-
-
-
-
-
