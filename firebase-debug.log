@@ -1,0 +1,32 @@
+[debug] [2020-04-18T06:59:30.682Z] ----------------------------------------------------------------------
+[debug] [2020-04-18T06:59:30.684Z] Command:       /usr/local/Cellar/node/13.13.0_1/bin/node /Users/Max/code/beeldpakket/node_modules/.bin/firebase ext:install firestore-send-email --project=beeldpakket
+[debug] [2020-04-18T06:59:30.685Z] CLI Version:   8.1.1
+[debug] [2020-04-18T06:59:30.685Z] Platform:      darwin
+[debug] [2020-04-18T06:59:30.685Z] Node Version:  v13.13.0
+[debug] [2020-04-18T06:59:30.696Z] Time:          Sat Apr 18 2020 18:59:30 GMT+1200 (New Zealand Standard Time)
+[debug] [2020-04-18T06:59:30.697Z] ----------------------------------------------------------------------
+[debug] [2020-04-18T06:59:30.697Z] 
+[debug] [2020-04-18T06:59:30.706Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-18T06:59:30.749Z] Error: Could not load the default credentials. Browse to https://cloud.google.com/docs/authentication/getting-started for more information.
+    at GoogleAuth.getApplicationDefaultAsync (/Users/Max/code/beeldpakket/node_modules/google-auth-library/build/src/auth/googleauth.js:160:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async GoogleAuth.getClient (/Users/Max/code/beeldpakket/node_modules/google-auth-library/build/src/auth/googleauth.js:502:17)
+    at async GoogleAuth.getAccessToken (/Users/Max/code/beeldpakket/node_modules/google-auth-library/build/src/auth/googleauth.js:524:24)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2020-04-18T06:59:54.943Z] ----------------------------------------------------------------------
+[debug] [2020-04-18T06:59:54.945Z] Command:       /usr/local/Cellar/node/13.13.0_1/bin/node /Users/Max/code/beeldpakket/node_modules/.bin/firebase ext:install firestore-send-email --project=beeldpakket
+[debug] [2020-04-18T06:59:54.945Z] CLI Version:   8.1.1
+[debug] [2020-04-18T06:59:54.945Z] Platform:      darwin
+[debug] [2020-04-18T06:59:54.945Z] Node Version:  v13.13.0
+[debug] [2020-04-18T06:59:54.946Z] Time:          Sat Apr 18 2020 18:59:54 GMT+1200 (New Zealand Standard Time)
+[debug] [2020-04-18T06:59:54.946Z] ----------------------------------------------------------------------
+[debug] [2020-04-18T06:59:54.946Z] 
+[debug] [2020-04-18T06:59:54.953Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-18T06:59:54.964Z] Error: Could not load the default credentials. Browse to https://cloud.google.com/docs/authentication/getting-started for more information.
+    at GoogleAuth.getApplicationDefaultAsync (/Users/Max/code/beeldpakket/node_modules/google-auth-library/build/src/auth/googleauth.js:160:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async GoogleAuth.getClient (/Users/Max/code/beeldpakket/node_modules/google-auth-library/build/src/auth/googleauth.js:502:17)
+    at async GoogleAuth.getAccessToken (/Users/Max/code/beeldpakket/node_modules/google-auth-library/build/src/auth/googleauth.js:524:24)
+[error] 
+[error] Error: An unexpected error has occurred.
