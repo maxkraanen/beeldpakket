@@ -3,11 +3,17 @@
   color: $green;
   margin-top: 70px;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 #plan-container {
   min-height: 650px;
   padding-bottom: 50px;
+  display: flex;
+}
+
+#widget-container {
+  width: 60%;
 }
 
 #filesubmit {
@@ -16,6 +22,8 @@
   align-items: center;
   padding-bottom: 70px;
   flex-direction: column;
+  padding-right: 100px;
+  width: 40%;
   h4 {
     color: $green;
     margin-bottom: 20px;
