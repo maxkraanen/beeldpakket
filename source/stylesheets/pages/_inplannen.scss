@@ -3,11 +3,23 @@
   color: $green;
   margin-top: 70px;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 #plan-container {
   min-height: 650px;
   padding-bottom: 50px;
+  display: flex;
+  @media (max-width: 750px) {
+    flex-direction: column;
+  }
+}
+
+#widget-container {
+  width: 50%;
+  @media (max-width: 750px) {
+    width: auto;
+  }
 }
 
 #filesubmit {
@@ -16,6 +28,12 @@
   align-items: center;
   padding-bottom: 70px;
   flex-direction: column;
+  padding-right: 100px;
+  width: 50%;
+  @media (max-width: 750px) {
+    width: auto;
+    padding: 0 10%;
+  }
   h4 {
     color: $green;
     margin-bottom: 20px;
@@ -26,6 +44,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 991px) {
+    flex-direction: column;
+  }
 }
 
 .message_upload {
@@ -46,4 +67,19 @@
   @extend .message_upload;
   color: $red;
   border: 1px solid $red;
+}
+
+#widget-booking-content {
+  // i-frame
+  display: flex;
+  justify-content: center;
+}
+
+#oa_widget {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+#file-input {
+  margin: 10px 0 20px;
 }
